@@ -1,0 +1,32 @@
+//fonts
+$font-title:'Playfair Display', serif;
+$font-main: 'Spectral', serif;
+$font-size: 1rem;
+//colors
+$color-title: #2A0944;
+$color-nav: #80ED99;
+$color-white: white;
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $font-main;
+    font-weight: 600;
+}
+
+//mixins
+@mixin flexcenter($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.btn-dark {
+    padding: .8em 1em;
+    border-radius: .5em;
+    border: none;
+    background-color: #121212;
+    a{
+        color: $color-white;
+    }
+}

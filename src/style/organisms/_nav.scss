@@ -1,0 +1,72 @@
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: $color-nav;
+    h1{
+        font-family: $font-title;
+        color: $color-title
+    }
+    ul{
+        flex-basis: 50%;
+        @include flexcenter(space-around, center);
+    }
+
+    ul{
+        display: none;
+    }
+    label{
+        padding: 1.2rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        div{            
+            transition: all 1s;
+        }
+    }
+    @media (min-width: 500px){
+        label{
+            display: none;
+        }
+        ul{
+            display: flex;
+        }
+    }
+}
+
+.toggle{
+    display: flex-row;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.move{
+    flex-direction: column-reverse;
+    .uno{
+        transform: rotate(90deg);
+    }
+    .dos{
+        transform: rotate(-45deg);
+    }
+    .tres{
+        transform: rotate(45deg);
+    }
+
+
+}
+
+.nav-toggle{
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+    background-color: $color-nav;
+    text-align: center;
+    opacity: .9;
+    ul{
+        li{
+            padding: .5em;
+        }
+        
+    }
+}

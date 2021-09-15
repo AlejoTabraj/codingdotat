@@ -1,0 +1,11 @@
+@import './initials/normalize';
+
+//mixins
+@import './mixins/general';
+@import './mixins/grid';
+
+//atoms
+@import './atoms/line';
+//orgaisms
+@import './organisms/nav';
+@import './organisms/hero';

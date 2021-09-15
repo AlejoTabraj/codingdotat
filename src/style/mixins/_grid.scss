@@ -1,0 +1,15 @@
+.grid-parent{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    $columns: 16;
+}
+
+.grid-child{
+    $width: 16;
+    $gap-constant: 0.3%;
+	$initialbasis: calc(var(--width, 0) / var(--columns, 16) * 100%);
+    $gap: calc((var(--columns, 16) - var(--width, 0)) * var(--gap-constant, 0.3%));
+	flex-basis: calc(var(--initialbasis) - var(--gap));
+
+}
