@@ -3,9 +3,11 @@ nav{
     width: 100%;
     justify-content: space-around;
     background-color: $color-nav;
+    box-shadow: .1px .1px 7px #121212;
     h1{
         font-family: $font-title;
-        color: $color-title
+        color: $color-title;
+        
     }
     ul{
         flex-basis: 50%;

@@ -1,0 +1,55 @@
+.services{
+    position: relative;
+    display: flex;
+    align-items: center;
+    .card-container{
+        width: 100%;
+    }
+    
+}
+.description{
+    text-align: center;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2em;
+    p{
+        text-align: justify;
+    }
+}
+path{
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+@media (min-width: 500px){
+    .cards-container{
+        margin-top: 4em;
+        display: flex;
+        .description{
+            color: $color-title;
+            padding: 10em 4em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            button{
+                cursor: pointer;
+            }
+        }
+        > * {
+            flex-basis: 50%;
+        }
+        section{
+            display: flex;
+            flex-flow: wrap row;
+            > * {
+                flex-basis: 50%;
+            }
+            
+        }
+    }
+}

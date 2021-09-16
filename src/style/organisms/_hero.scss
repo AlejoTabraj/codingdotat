@@ -1,4 +1,5 @@
 .hero{
+    padding: 0 2em;
     z-index: 1;
     width: 100%;
     height: 90vh;
@@ -7,33 +8,36 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    opacity: 0.8;
+    margin-bottom: 32em;
     
-  --stripe: #cfd8dc;
-  --bg: #e1e1e1;
-
-  background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -50px 0,
-    linear-gradient(225deg, var(--bg) 25%, transparent 25%) -50px 0,
-    linear-gradient(315deg, var(--bg) 25%, transparent 25%),
-    linear-gradient(45deg, var(--bg) 25%, transparent 25%);
-    background-size: 100px 100px;
-    background-color: var(--stripe);
+    
     color: $color-title;
-    h1{
-        font-weight: 700;
+    h1.h1{
+        font-size: 1.6rem;
+        font-weight: 1900;
+        opacity: 1;
     }
     p{
         opacity: .9;
         margin-bottom: 2rem;
+        
     }
     img{
         width: 12em;
+        
         opacity: .6;
     }
     @media (min-width: 500px){
+         padding: 0;
+         margin-bottom: 0;
+           h1.h1{
+                font-size: 2.2rem ;
+            }
+        
         img{
             width: 3em;
             fill: $color-title;
+            margin-left: 2em;
             opacity: .6;
         }
         > div{
